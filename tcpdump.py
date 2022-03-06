@@ -21,19 +21,7 @@ struct rtentry;		/* declarations in <net/if.h> */
 #include <net/if.h>
 #include <netinet/in.h>
 #endif /* _WIN32 */
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#if !defined(_MSC_VER) && !defined(__BORLANDC__) && !defined(__MINGW32__)
-#include <unistd.h>
-#endif
-#include <fcntl.h>
-#include <errno.h>
-#include <limits.h>
-
 #include "diag-control.h"
-
 #ifdef HAVE_OS_PROTO_H
 #include "os-proto.h"
 #endif
