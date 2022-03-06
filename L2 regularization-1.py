@@ -392,8 +392,7 @@ namespace Regularization
 
         ++epoch;
 
-      } // while
-
+      } // while 
       double[] retResult = new double[dim];
       Array.Copy(bestSwarmPosition, retResult, retResult.Length);
       return retResult;
