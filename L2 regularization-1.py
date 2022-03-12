@@ -55,14 +55,8 @@ namespace Regularization
       Console.WriteLine("\nSeeking good L2 weight");
       double alpha2 = lc.FindGoodL2Weight(trainData, seed);
       Console.WriteLine("Good L2 weight = " + alpha2.ToString("F3"));
-
-      Console.WriteLine("\nStarting training using L1 regularization, alpha1 = " +
-        alpha1.ToString("F3"));
-      weights = lc.Train(trainData, maxEpochs, seed, alpha1, 0.0);
-
       Console.WriteLine("\nBest weights found:");
       ShowVector(weights, 3, weights.Length, true);
-
       trainAccuracy = lc.Accuracy(trainData, weights);
       Console.WriteLine("Prediction accuracy on training data = " +
         trainAccuracy.ToString("F4"));
