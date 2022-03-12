@@ -1,9 +1,4 @@
 /*
-
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
-
 #include <pcap-types.h>
 #ifndef _WIN32
 #include <sys/param.h>
