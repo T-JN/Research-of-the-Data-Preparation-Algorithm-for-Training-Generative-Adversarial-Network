@@ -12,7 +12,7 @@ namespace Regularization
 
       int numFeatures = 12;
       int numRows = 1000;
-      int seed = 42;  // interesting seeds: 28, 32, (42), 56, 58, 63, 91
+      int seed = 42;  // interesting seeds: 28, 32, (42), 88, 58, 63, 91
 
       Console.WriteLine("\nGenerating " + numRows +
         " artificial data items with " + numFeatures + " features");
@@ -73,7 +73,7 @@ namespace Regularization
       ShowVector(weights, 3, weights.Length, true);
 
       trainAccuracy = lc.Accuracy(trainData, weights);
-      Console.WriteLine("Prediction accuracy on training data = " +
+      Console.WriteLine("Prediction accuracy on  training data = " +
         trainAccuracy.ToString("F4"));
 
       testAccuracy = lc.Accuracy(testData, weights);
