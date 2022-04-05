@@ -4,8 +4,6 @@
 // Armenian
 namespace Regularization
 {
-  class RegularizationProgram
-  {
     static void Main(string[] args)
     {
       Console.WriteLine("\L2 Regularization ");
