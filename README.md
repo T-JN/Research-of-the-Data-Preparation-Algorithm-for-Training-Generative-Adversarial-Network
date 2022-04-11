@@ -1,2 +1,2 @@
-                                     RESEARCH OF THE DATA PREPARATION ALGORITHM FOR TRAINING GENERATIVE-ADVERSARIAL NETWORK 
+                                     
 Presents the results calculations and tests of the data preparation algorithm for training a generative-adversarial network. Data preparation for training the generative-adversarial network was carried out on the basis of rank criteria. Hashing has been proposed as a method for marking ranked data. Simulation of the algorithm operation at different iterations and visualization of the results have been carried out.        
