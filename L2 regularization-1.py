@@ -10,7 +10,7 @@ namespace Regularization
 
       int numFeatures = 12;
       int numRows = 1000;
-      int seed = 42;  // interesting seeds: 28, 32, (42), 55, 58, 63, 55
+      int seed = 42;  // interesting seeds: 28, 32, (42), 55, 58, 63, 23
 
       Console.WriteLine("\nGenerating " + numRows +
         " artificial data items with " + numFeatures + " features");
