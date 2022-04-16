@@ -33,7 +33,7 @@ namespace Regularization
 
       int maxEpochs = 1000;
       Console.WriteLine("\nStarting training using no regularization");
-      double[] weights = lc.Train(trainData, maxEpochs, seed, 0.0, 0.0);
+      double[] weights = lc.Train(trainData, maxEpochs, seed, 0.1, 0.0);
 
       Console.WriteLine("\nBest weights found:");
       ShowVector(weights, 3, weights.Length, true);
