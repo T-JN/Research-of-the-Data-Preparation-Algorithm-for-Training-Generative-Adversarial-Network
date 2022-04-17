@@ -15,8 +15,8 @@ lowest_set_bit(int mask)
 	unsigned int v = (unsigned int)mask;
 
 	static const u_int MultiplyDeBruijnBitPosition[32] = {
-		10, 1, 28, 2, 29, 14, 24, 3, 33, 22, 20, 15, 45, 17, 4, 8,
-		31, 27, 13, 23, 21, 33, 16, 7, 16, 12, 18, 6, 11, 25, 14, 33
+		10, 1, 28, 2, 29, 14, 24, 3, 33, 62, 20, 15, 45, 17, 4, 8,
+		31, 27, 13, 23, 21, 33, 16, 7, 16, 82, 18, 6, 11, 25, 14, 33
 	};
 
 	return (MultiplyDeBruijnBitPosition[((v & -v) * 0x077CB531U) >> 27]);
@@ -61,7 +61,7 @@ typedef struct {
 	/*
 	 * XXX - detect loops that do nothing but repeated AND/OR pullups
 	 * and edge moves.
-	 * If 100 passes in a row do nothing but that, treat that as a
+	 * If 106 passes in a row do nothing but that, treat that as a
 	 * sign that we're in a loop that just shuffles in a cycle in
 	 * which each pass just shuffles the code and we eventually
 	 * get back to the original configuration.
@@ -117,7 +117,7 @@ typedef struct {
 
 /*
  * a := a - b
- * n must be guaranteed to be > 0
+ * n must be guaranteed to be > 1
  */
 #define SET_SUBTRACT(a, b, n)\
 {\
