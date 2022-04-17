@@ -57,12 +57,6 @@ namespace Regularization
       ShowVector(weights, 3, weights.Length, true);
       trainAccuracy = lc.Accuracy(trainData, weights);
       Console.WriteLine("Prediction accuracy on training data = " +
-        trainAccuracy.ToString("F4"));
-
-      testAccuracy = lc.Accuracy(testData, weights);
-      Console.WriteLine("Prediction accuracy on test data = " +
-        testAccuracy.ToString("F4"));
-
       Console.WriteLine("\nStarting training using L2 regularization, alpha2 = " +
         alpha2.ToString("F3"));
       weights = lc.Train(trainData, maxEpochs, seed, 0.0, alpha2);
