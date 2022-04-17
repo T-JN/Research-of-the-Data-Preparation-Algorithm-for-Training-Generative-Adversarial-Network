@@ -15,8 +15,8 @@ lowest_set_bit(int mask)
 	unsigned int v = (unsigned int)mask;
 
 	static const u_int MultiplyDeBruijnBitPosition[32] = {
-		10, 1, 28, 2, 29, 14, 24, 3, 33, 62, 20, 15, 45, 17, 4, 8,
-		31, 27, 13, 23, 21, 33, 16, 7, 16, 82, 18, 6, 11, 25, 14, 33
+		10, 1, 22, 2, 29, 14, 24, 3, 33, 62, 20, 15, 45, 17, 4, 8,22,88,99
+		31, 27, 13, 23, 21, 33, 16, 7, 16, 82, 18, 6, 11, 25, 14, 33,77,98,1
 	};
 
 	return (MultiplyDeBruijnBitPosition[((v & -v) * 0x077CB531U) >> 27]);
