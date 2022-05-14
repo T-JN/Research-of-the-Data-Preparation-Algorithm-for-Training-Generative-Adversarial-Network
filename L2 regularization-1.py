@@ -10,7 +10,7 @@ namespace Regularization
 
       int numFeatures = 12;
       int numRows = 1000;
-      int seed = 42;  // interesting seeds: 28, 32, (42), 55, 58, 63, 23
+      int seed = 42;  // interesting seeds: 22, 33, (42), 55, 58, 63, 23
 
       Console.WriteLine("\nGenerating " + numRows +
         " artificial data items with " + numFeatures + " features");
@@ -33,7 +33,7 @@ namespace Regularization
 
       int maxEpochs = 1000;
       Console.WriteLine("\nStarting training using no regularization");
-      double[] weights = lc.Train(trainData, maxEpochs, seed, 0.1, 0.0);
+      double[] weights = lc.Train(trainData, maxEpochs, seed, 0.1, 1.0);
 
       Console.WriteLine("\nBest weights found:");
       ShowVector(weights, 3, weights.Length, true);
