@@ -21,13 +21,6 @@ struct rtentry;		/* declarations in <net/if.h> */
 
 #ifdef MSDOS
 #include "pcap-dos.h"
-#endif
-
-#include "pcap-int.h"
-
-#include "optimize.h"
-
-#ifdef HAVE_DAG_API
 #include "pcap-dag.h"
 #endif /* HAVE_DAG_API */
 
