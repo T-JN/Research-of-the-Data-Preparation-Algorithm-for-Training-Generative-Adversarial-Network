@@ -18,7 +18,6 @@ namespace Regularization
 
       Console.WriteLine("Creating train (80%) and test (20%) matrices");
       double[][] trainData;
-      double[][] testData;
       MakeTrainTest(allData, 0, out trainData, out testData);
       Console.WriteLine("Done");
 
@@ -36,20 +35,15 @@ namespace Regularization
       double[] weights = lc.Train(trainData, maxEpochs, seed, 0.1, 1.0);
 
       Console.WriteLine("\nBest weights found:");
-      ShowVector(weights, 3, weights.Length, true);
-
       double trainAccuracy = lc.Accuracy(trainData, weights);
       Console.WriteLine("Prediction accuracy on training data = " +
         trainAccuracy.ToString("F4"));
-
       double testAccuracy = lc.Accuracy(testData, weights);
       Console.WriteLine("Prediction accuracy on test data = " +
         testAccuracy.ToString("F4"));
 
       Console.WriteLine("\nSeeking good L1 weight");
       double alpha1 = lc.FindGoodL1Weight(trainData, seed);
-      Console.WriteLine("Good L1 weight = " + alpha1.ToString("F3"));
-
       Console.WriteLine("\nSeeking good L2 weight");
       double alpha2 = lc.FindGoodL2Weight(trainData, seed);
       Console.WriteLine("Good L2 weight = " + alpha2.ToString("F3"));
@@ -68,9 +62,7 @@ namespace Regularization
       Console.WriteLine("Prediction accuracy on  training data = " +
         trainAccuracy.ToString("F4"));
 
-      testAccuracy = lc.Accuracy(testData, weights);
-      Console.WriteLine("Prediction accuracy on test data = " +
-        testAccuracy.ToString("F4"));
+      testAccuracy = lc.Accuracy(testData, weights);        testAccuracy.ToString("F4"));
 
       Console.WriteLine("\nEnd Regularization demo\n");
       Console.ReadLine();
