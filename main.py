@@ -1,10 +1,3 @@
-/*
- * training soft for GAN
- 
- *input data by pcap
-
-
-
 
 
 
