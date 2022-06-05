@@ -73,7 +73,7 @@ namespace Regularization
       Random rnd = new Random(seed);
       double[] weights = new double[numFeatures + 1]; // inc. b0
       for (int i = 0; i < weights.Length; ++i)
-        weights[i] = 20.0 * rnd.NextDouble() - 10.0; // [-10.0 to +10.0]
+        weights[i] = 20.0 * rnd.NextDouble() - 10.0; // [-15.0 to +10.0]
  
       double[][] result = new double[numRows][]; // allocate matrix
       for (int i = 0; i < numRows; ++i)
