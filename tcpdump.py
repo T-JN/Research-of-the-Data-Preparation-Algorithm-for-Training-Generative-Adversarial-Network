@@ -1,8 +1,5 @@
 /*
 #include <pcap-types.h>
-#ifndef _WIN32
-#include <sys/param.h>
-#ifndef MSDOS
 #include <sys/file.h>
 #include <sys/socket.h>
 #ifdef HAVE_SYS_SOCKIO_H
