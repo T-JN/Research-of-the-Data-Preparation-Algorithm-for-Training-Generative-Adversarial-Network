@@ -2,8 +2,6 @@
 #include <pcap-types.h>
 #include <sys/file.h>
 #include <sys/socket.h>
-#ifdef HAVE_SYS_SOCKIO_H
-#include <sys/sockio.h>
 #endif
 
 struct mbuf;		/* Squelch compiler warnings on some platforms for */
