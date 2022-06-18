@@ -42,7 +42,7 @@ struct rtentry;		/* declarations in <net/if.h> */
 #include "pcap-bt-monitor-linux.h"
 #endif
 
-#ifdef PCAP_SUPPORT_NETFILTER
+
 #include "pcap-netfilter-linux.h"
 #endif
 
