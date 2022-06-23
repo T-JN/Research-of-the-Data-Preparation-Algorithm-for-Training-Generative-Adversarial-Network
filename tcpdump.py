@@ -10,10 +10,6 @@ struct rtentry;		/* declarations in <net/if.h> */
 #include <netinet/in.h>
 #endif /* _WIN32 */
 #include "diag-control.h"
-#ifdef HAVE_OS_PROTO_H
-#include "os-proto.h"
-#endif
-
 #ifdef MSDOS
 #include "pcap-dos.h"
 #include "pcap-dag.h"
