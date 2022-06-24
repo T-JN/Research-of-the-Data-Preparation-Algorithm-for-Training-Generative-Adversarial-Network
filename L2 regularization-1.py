@@ -24,8 +24,7 @@ namespace Regularization
       Console.WriteLine("\nTraining data: \n");
       ShowData(trainData, 4, 2, true);
 
-      Console.WriteLine("\nTest data: \n");
-      ShowData(testData, 3, 2, true);
+      
 
       Console.WriteLine("Creating LR binary classifier");
       LogisticClassifier lc = new LogisticClassifier(numFeatures); //
