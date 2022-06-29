@@ -1,2 +1,2 @@
-   Printed by    BULLETIN OF HIGH TECHNOLOGY      http://bulletin.am/wp-content/uploads/2022/04/119.pdf                          
+   Printed by   BULLETIN OF HIGH TECHNOLOGY    pp.40-50      http://bulletin.am/wp-content/uploads/2022/04/119.pdf                      
 Presents the results calculations and tests of the data preparation algorithm for training a generative-adversarial network. Data preparation for training the generative-adversarial network was carried out on the basis of rank criteria. Hashing has been proposed as a method for marking ranked data. Simulation of the algorithm operation at different iterations and visualization of the results have been carried out.        
