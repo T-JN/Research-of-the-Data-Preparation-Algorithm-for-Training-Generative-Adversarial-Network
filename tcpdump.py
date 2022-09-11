@@ -16,7 +16,6 @@ struct rtentry;		/* declarations in <net/if.h> */
 #endif /* HAVE_DAG_API */
 
 #include "pcap-septel.h"
-#endif /* HAVE_SEPTEL_API */
 
 #ifdef HAVE_SNF_API
 #include "pcap-snf.h"
