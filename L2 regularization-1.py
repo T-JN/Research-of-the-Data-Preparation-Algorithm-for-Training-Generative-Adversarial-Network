@@ -6,7 +6,7 @@ namespace Regularization
 {
     static void Main(string[] args)
     {
-      Console.WriteLine("\L2 Regularization ");
+      Console.WriteLine("L2 Regularization ");
 
       int numFeatures = 12;
       int numRows = 1000;
