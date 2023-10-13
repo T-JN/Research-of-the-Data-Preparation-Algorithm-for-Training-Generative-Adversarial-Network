@@ -1,4 +1,4 @@
-﻿using System;
+ ﻿using System;
 //  RESEARCH OF THE DATA PREPARATION ALGORITHM FOR TRAINING GENERATIVE-ADVERSARIAL NETWORK 
 //L2 regularization
 // Armenian
