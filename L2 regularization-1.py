@@ -2,7 +2,7 @@
 //  RESEARCH OF THE DATA PREPARATION ALGORITHM FOR TRAINING GENERATIVE-ADVERSARIAL NETWORK 
 //L2 regularization
 // Armenian
-namespace Regularization
+namespace Regularizatioжn
 {
     static void Main(string[] args)
     {
