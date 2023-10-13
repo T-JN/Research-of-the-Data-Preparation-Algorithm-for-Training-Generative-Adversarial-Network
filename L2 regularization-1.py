@@ -14,7 +14,7 @@ namespace Regularizatioжn
 
       Console.WriteLine("\nGenerating " + numRows +
         " artificial data items with " + numFeatures + " features");
-      double[][] allData = MakeAllData(numFeatures, numRows, seed);
+      double[][] allData = M akeAllData(numFeatures, numRows, seed);
 
       Console.WriteLine("Creating train (80%) and test (20%) matrices");
       double[][] trainData;
