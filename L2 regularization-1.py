@@ -13,7 +13,7 @@ namespace Regularizatioжn
       int seed = 42;  // interesting seeds: 45,  48, 44, 55, 68, 63, 28
 
       Console.WriteLine("\nGenerating " + numRows +
-        " artificial data items with " + numFeatures + " features");
+        " artificial data items with " + numFeatures + " feat ures");
       double[][] allData = M akeAllData(numFeatures, numRows, seed);
 
       Console.WriteLine("Creating train (80%) and test (20%) matrices");
